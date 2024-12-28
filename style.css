@@ -249,5 +249,101 @@ main img {
   overflow: hidden; /* Hides overflow if necessary */
 }
  
-   /* Makes the text prominent */
+/* General Table Styling */
+.stats-table {
+  width: 100%; /* Full-width table */
+  text-align: center; /* Center content */
+  background-color: #eaf3ff; /* Light blue background */
+  padding: 20px 0; /* Add spacing inside the table */
+  border-collapse: collapse; /* Removes gaps between cells */
+}
+
+.stats-table td {
+  padding: 20px; /* Space between columns */
+}
+
+.stats-table h1 {
+  color: #0c4da2; /* Dark blue for numbers */
+  font-size: 2em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.stats-table p {
+  color: #0c4da2; /* Dark blue for text */
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+
+/* Button Styling */
+.explore-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.explore-button a {
+  background-color: #0c4da2; /* Dark blue background */
+  color: white; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s;
+}
+
+.explore-button a:hover {
+  background-color: #083d85; /* Slightly darker blue on hover */
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Fixed 5 columns */
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+}
+
+/* Adjust card sizes for 5 column layout */
+.program-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Make images smaller to fit 5 columns */
+.program-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .programs-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-grid {
+      grid-template-columns: 1fr;
+  }
+}
+.programs-section {
+  max-width: 75%; /* Limit width to 75% of the parent */
+  margin: 0 auto; /* Center horizontally */
+  padding: 2rem 0; /* Add some vertical padding */
+  text-align: center; /* Center-align text */
 }
