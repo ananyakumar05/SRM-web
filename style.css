@@ -353,6 +353,7 @@ main img {
     max-width: 1200px;
     margin: 2rem auto;
     padding: 0 1rem;
+    background-color: #fafcff;
 }
 
 .program-types {
@@ -918,4 +919,333 @@ main img {
 
 .research-button:hover {
   background-color: #003a94;
+}
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root variables for easy customization */
+:root {
+  /* Colors */
+  --primary-color: #0C4DA2;
+  --secondary-color: #f1c40f;
+  --text-color: #333333;
+  --background-color: #ffffff;
+  --light-gray: #f8f9fa;
+  --dark-gray: #6c757d;
+
+  /* Typography */
+  --font-family: 'Source Sans 3', sans-serif;
+  --font-size-base: 16px;
+  --line-height-base: 1.5;
+
+  /* Spacing */
+  --spacing-small: 0.5rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 2rem;
+
+  /* Border radius */
+  --border-radius: 4px;
+}
+
+/* Typography */
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-medium);
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: var(--spacing-medium);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: var(--spacing-small) var(--spacing-medium);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.btn--primary:hover {
+  background-color: #083d85;
+}
+
+.btn--secondary {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.btn--secondary:hover {
+  background-color: #d4ac0d;
+}
+
+/* Form elements */
+.form__input {
+  display: block;
+  width: 100%;
+  padding: var(--spacing-small);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--dark-gray);
+  border-radius: var(--border-radius);
+  transition: border-color 0.3s ease;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form__label {
+  display: inline-block;
+  margin-bottom: var(--spacing-small);
+  font-weight: 600;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-medium);
+}
+
+.section {
+  padding: var(--spacing-large) 0;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: var(--spacing-medium) 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.header__menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__menu-item {
+  margin-left: var(--spacing-medium);
+}
+
+.header__menu-link {
+  color: var(--background-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__menu-link:hover {
+  color: var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--light-gray);
+  color: var(--text-color);
+  padding: var(--spacing-large) 0;
+  text-align: center;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.mt-1 { margin-top: var(--spacing-small); }
+.mt-2 { margin-top: var(--spacing-medium); }
+.mt-3 { margin-top: var(--spacing-large); }
+.mb-1 { margin-bottom: var(--spacing-small); }
+.mb-2 { margin-bottom: var(--spacing-medium); }
+.mb-3 { margin-bottom: var(--spacing-large); }
+
+/* Add these styles to your existing CSS file */
+
+.global-linkages {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.global-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.global-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.global-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #0C4DA2;
+}
+
+/* Right-aligned stats container */
+.stats-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 4rem;
+}
+
+.world-map-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 800px; /* Adjusted for right alignment */
+  padding: 4rem 2rem;
+  position: relative;
+  background-image: url('path-to-your-world-map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.stats-quadrant {
+  text-align: center;
+  padding: 2rem;
+}
+
+.stat-number {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #0C4DA2;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  color: #0C4DA2;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* Bottom-aligned button container */
+.directorate-button-container {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.directorate-button {
+  display: inline-flex;
+  position: absolute;
+  bottom:0px;
+  left:50%;
+  transform: translate(-50%, 0);
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #0C4DA2;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.directorate-button:hover {
+  background-color: #083b7d;
+}
+
+.directorate-button i {
+  margin-left: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .stats-container {
+      justify-content: center;
+  }
+  
+  .world-map-stats {
+      max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .world-map-stats {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding: 2rem 1rem;
+  }
+
+  .stat-number {
+      font-size: 2.5rem;
+  }
+
+  .stat-label {
+      font-size: 1rem;
+  }
+
+  .global-title {
+      font-size: 2rem;
+  }
+
+  .directorate-button {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .global-linkages {
+      padding: 2rem 1rem;
+  }
+  
+  .global-header {
+      margin-bottom: 2rem;
+  }
 }
