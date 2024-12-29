@@ -1443,3 +1443,166 @@ p {
       max-width: 120px;
   }
 }
+
+.alumni_header_2024 {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.alumni_content_2024 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.alumni_text_2024 {
+  flex: 0 0 50%;
+  padding-right: 40px;
+}
+
+.alumni_title_2024 {
+  font-size: 42px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.alumni_desc_2024 {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.alumni_btn_2024 {
+  display: inline-block;
+  background-color: #0047AB;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.alumni_btn_2024:hover {
+  background-color: #003380;
+}
+
+.alumni_images_2024 {
+  flex: 0 0 45%;
+  display: flex;
+  gap: 20px;
+}
+
+.alumni_img_2024 {
+  width: calc(50% - 10px);
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .alumni_content_2024 {
+      flex-direction: column;
+  }
+  
+  .alumni_text_2024 {
+      flex: 1;
+      padding-right: 0;
+      margin-bottom: 30px;
+  }
+  
+  .alumni_images_2024 {
+      flex: 1;
+      width: 100%;
+  }
+}
+
+.alum_grid_container {
+  background-color: #f5f5f5;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.alum_row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.alum_card {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1;
+  border-radius: 8px;
+}
+
+.alum_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.alum_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  color: white;
+}
+
+.alum_info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.alum_info p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 1200px) {
+  .alum_row {
+      justify-content: center;
+  }
+  
+  .alum_card {
+      flex: 0 0 calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .alum_card {
+      flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .alum_card {
+      flex: 0 0 100%;
+  }
+}
+
+.alumni_header_2024{
+  height: 400px;
+}
+.alumni_images_2024 img{
+  height: 300px;
+  width: 300px;
+  -ms-flex-item-align: :end;
+}
