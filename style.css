@@ -46,6 +46,7 @@ header video {
     align-items: center;
     padding: 0.5rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
 
 .quick-links ul {
@@ -1249,3 +1250,84 @@ p {
       margin-bottom: 2rem;
   }
 }
+
+.srm-campus-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.srm-campus-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-size: 2.5em;
+  position: relative;
+}
+
+.srm-campus-title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #0066cc;
+  margin: 20px auto;
+}
+
+.srm-campus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.srm-campus-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.srm-campus-card-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.srm-campus-card-content {
+  padding: 20px;
+}
+
+.srm-campus-card-title {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+}
+
+.srm-campus-card-text {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+.dir-of-adm{
+  display: inline-block;
+    background-color: #0C4DA2;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease
+}
+.view-all-rank{
+  display: inline-block;
+    background-color: #0C4DA2;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease
+}
+
